@@ -1,0 +1,8 @@
+StocksCodeListFile        = "resources/stocks"
+StocksTimeControllerFile  = "resources/time"
+StocksInfoSavePath        = "cluster/"
+StockInfoFileAppendix     = ".txt"
+CPUCore = 1
+ErrorMessage = "errors.txt"
+RangeOfPeriod = 45
+ReferPeriod = 2

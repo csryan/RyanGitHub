@@ -1,0 +1,7 @@
+#'StartTime' indentify the start date, if it's empty, then '2014-01-01' is set, time format 'YYYY-MM-DD'
+StartTime   = '2013-07-01'
+#if 'StopTime' is empty, Today is set, time format 'YYYY-MM-DD'
+StopTime    = '' 
+#This value will NOT take effective if 'StartTime' and 'StopTime' is setted.
+#This value will take effective, only if one of these two is empty.
+MaximumDays = '365'
