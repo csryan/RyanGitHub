@@ -3,8 +3,6 @@
 import re
 import os
 import urllib2
-from threading import Thread
-from Queue import Queue
 import time
 
 ########################################################################
@@ -44,7 +42,9 @@ class ProcessJobsListLink(object):
         self.time_str = map(lambda t: t.split()[2]+' '+t.split()[3], time_c.findall(html))
         self.time = map(lambda t: time.strptime(t, '%Y-%m-%d %H:%M:%S'), self.time_str)
         print self.time
-        
+        next_page_c = re.compile(r'<li class="Paging_next"><a href=".*?">', re.S)
+        self.next_page = next_page_c.findall(html)[0][33:-2]
+        print self.next_page
     
     #----------------------------------------------------------------------
     def getCompile(self, link):
