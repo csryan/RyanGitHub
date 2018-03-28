@@ -5,6 +5,7 @@ PROPERTY_FILE = 'fsi.prop'
 ########################################################################
 class ReadProp(object):
     '''
+    test
     read property information(fsi.prop, pointed to fetch stock information property)
     '''
     #----------------------------------------------------------------------
